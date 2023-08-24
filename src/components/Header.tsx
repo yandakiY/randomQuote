@@ -11,11 +11,11 @@ const Header: React.FC<Props> = props => {
 
         <ul className='flex items-center gap-6 text-xl pointer'>
             <li className='cursor-pointer hover:border-b-2 pb-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-10 hover: duration-300 '>
-                <a href="">About me</a>
+                <a target='_blank' href="https://yandaki-dev.vercel.app">About me</a>
             </li>
-            <li className='cursor-pointer hover:border-b-2 pb-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-10 hover: duration-300 '>
+            {/* <li className='cursor-pointer hover:border-b-2 pb-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-10 hover: duration-300 '>
                 <a href="">Contacts</a>
-            </li>
+            </li> */}
         </ul>
     </nav>
   )
