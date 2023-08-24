@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    
+    overflow-y: hidden;
+}
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
