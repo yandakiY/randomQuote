@@ -30,19 +30,19 @@ const Quote: React.FC<Props> = (props) => {
   return (
     <>
         {!props.quote ? 
-            <div className='text-3xl'>
+            <div className='text-base sm:text-3xl'>
                 Loading...
                 <p className='text-sm'>Refresh <a className='text-blue-500 underline' target='_blank' href="/">here</a> if a quote is not loaded</p>
             </div> :
-            <div>
+            <div className='text-sm sm:text-xl'>
                 {/* part to screen  */}
                 <div ref={quoteRef} className='p-4'>
                     {/* Quote part */}
-                    <div className='font-bold text-xl'>
+                    <div className='font-bold'>
                         <div className='uppercase'>
                         <i
-                            style={{ fontSize: "45px" }}
-                            className="icon-quote-left"
+                            // style={{ fontSize: "45px" }}
+                            className="icon-quote-left text-base sm:text-2xl"
                         ></i>
                             {/* <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg> */}
                             {props.quote}

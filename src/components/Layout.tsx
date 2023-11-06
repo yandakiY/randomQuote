@@ -8,12 +8,10 @@ interface LayoutProps{
 
 const Layout: React.FC<LayoutProps> = (props) => {
   return (
-    <>
-        <div className='p-4 border border-black w-2/4'>
-            {/* <h2>Quote :</h2> */}
-            <Quote author={props.author} quote={props.quote}/>
-        </div>
-    </>
+    <div className='p-4 border border-black w-fit sm:w-2/4'>
+        {/* <h2>Quote :</h2> */}
+        <Quote author={props.author} quote={props.quote}/>
+    </div>
   )
 }
 
